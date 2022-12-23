@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 from time import sleep
@@ -65,9 +66,10 @@ for team_name in team_names:
         "team_name": team_name,
         "players": get_team_information(team_name)
     })
-    print("Sleeping for 5...")
-    sleep(5)
+    print("Sleeping for 10...")
+    sleep(10)
 
+script_path = os.path.abspath(os.path.dirname(__file__))
 
-with open("./webpage/src/team_data.json", "w") as f:
+with open(os.path.join(script_path, "webpage", "src", "team_data.json"), "w") as f:
     json.dump(team_data, f)

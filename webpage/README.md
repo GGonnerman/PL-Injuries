@@ -1,4 +1,4 @@
-# premier-league-injuries
+# pl-football-injuries
 
 ## Project setup
 ```

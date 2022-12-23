@@ -1,7 +1,8 @@
 <template>
     <div class="container">
-        <h1 class="title">Premier League Injuries</h1>
+        <h1 class="title">PL Football Injuries</h1>
         <LeagueView />
+        <p>All credit goes to <a href="https://www.premierinjuries.com/">Premier Injuries</a> for the original data.</p>
     </div>
 </template>
 
